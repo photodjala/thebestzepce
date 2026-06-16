@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Best</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="back" href="index.html">← Nazad na meni</a>
+<div id="gallery"></div>
+<script>
+const params = new URLSearchParams(window.location.search);
+const cat = params.get('cat');
+const images = {
+summer:['SUMMER MENU.png','SUMMER MENU 2.png','SUMMER MENU 3.png','SUMMER MENU 4.png','SUMMER MENU 5.png','SUMMER MENU 6.png'],
+coffee:['COFFE TIME.png','COFFE TIME 2.png'],
+snack:['SNACK  SWEET.png','COMBO.png'],
+drinks:['DRINKS.png'],
+pivo:['PIVO I VINO.png','BOCE.png'],
+alkohol:['ALKOHOLNA PICA.png']
+};
+const g = document.getElementById('gallery');
+(images[cat] || []).forEach(f=>{
+  const img=document.createElement('img');
+  img.src='images/'+f;
+  img.className='menuimg';
+  g.appendChild(img);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+
+body{margin:0;background:#111;color:#fff;font-family:Arial,sans-serif}
+.container{max-width:500px;margin:auto}
+.hero{width:100%;display:block}
+.buttons{display:flex;flex-direction:column;gap:12px;padding:16px}
+.buttons a,.back{
+background:#1d1d1d;color:#d4b06a;text-decoration:none;
+padding:18px;border-radius:18px;text-align:center;
+border:1px solid #d4b06a;font-weight:bold
+}
+#gallery{max-width:700px;margin:auto;padding:10px}
+.menuimg{width:100%;display:block;margin-bottom:16px;border-radius:14px}
+.back{display:block;margin:15px}
