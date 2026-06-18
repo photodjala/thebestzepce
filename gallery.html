@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="bs"><head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Best</title>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -20,13 +19,12 @@ drinks:['DRINKS.png'],
 pivo:['PIVO I VINO.png','BOCE.png'],
 alkohol:['ALKOHOLNA PICA.png']
 };
-const g = document.getElementById('gallery');
-(images[cat] || []).forEach(f=>{
-  const img=document.createElement('img');
-  img.src='images/'+f;
-  img.className='menuimg';
-  g.appendChild(img);
+const gallery = document.getElementById('gallery');
+(images[cat] || []).forEach(name=>{
+ const img=document.createElement('img');
+ img.src=name;
+ img.className='menuimg';
+ gallery.appendChild(img);
 });
 </script>
-</body>
-</html>
+</body></html>
