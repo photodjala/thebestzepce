@@ -2,10 +2,11 @@
 <html lang="bs">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Best</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <a class="back" href="index.html">← Nazad na meni</a>
@@ -21,15 +22,16 @@ const images = {
   summer: [
     'images/summer/SUMMER MENU 1.png',
     'images/summer/SUMMER MENU 2.png',
-    'images/summer/SUMMER MENU 3.png',
-    'images/summer/SUMMER MENU 4.png',
-    'images/summer/SUMMER MENU 5.png',
-    'images/summer/SUMMER MENU 6.png'
+    'images/summer/SUMMER MENU 3.png'
   ],
 
   coffee: [
     'images/coffe time/COFFE TIME 1.png',
     'images/coffe time/COFFE TIME 2.png'
+  ],
+
+  snack: [
+    'images/snack sweet/SNACK SWEET.png'
   ],
 
   icecream: [
@@ -48,6 +50,26 @@ const images = {
 
   beer: [
     'images/beer wine/PIVO I VINO.png'
+  ],
+
+  alcohol: [
+    'images/alcohol/ALKOHOLNA PICA.png',
+    'images/alcohol/BOCE.png'
   ]
 
 };
+
+const gallery = document.getElementById('gallery');
+
+if (images[cat]) {
+  images[cat].forEach(path => {
+    const img = document.createElement('img');
+    img.src = path;
+    img.className = 'menuimg';
+    gallery.appendChild(img);
+  });
+}
+</script>
+
+</body>
+</html>
