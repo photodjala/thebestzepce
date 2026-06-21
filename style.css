@@ -23,21 +23,21 @@ body{
     position:absolute;
     left:50% !important;
     transform:translateX(-50%) !important;
-    width:48% !important;
-    height:3.7% !important;
+    width:60% !important;
+    height:6.4% !important;
     display:block;
     background:rgba(255,0,0,0.30) !important;
     border:2px solid yellow !important;
 }
 
-/* POZICIJE DUGMADI */
-.coffee{ top:39.8% !important; }
-.summer{ top:45.3% !important; }
-.snack{ top:50.7% !important; }
-.icecream{ top:56.2% !important; }
-.cocktails{ top:61.6% !important; }
-.combo{ top:67.1% !important; }
-.beer{ top:72.6% !important; }
+.coffee{ top:37.4% !important; }
+.summer{ top:44.9% !important; }
+.snack{ top:52.4% !important; }
+.icecream{ top:59.8% !important; }
+.cocktails{ top:67.3% !important; }
+.combo{ top:74.8% !important; }
+.beer{ top:82.3% !important; }
+.alcohol{ top:89.7% !important; }
 .alcohol{ top:78.0% !important; }
 
 .back{
