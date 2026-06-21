@@ -1,23 +1,55 @@
 <!DOCTYPE html>
-<html lang="bs"><head>
+<html lang="bs">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Best</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <a class="back" href="index.html">← Nazad na meni</a>
+
 <div id="gallery"></div>
-<script>
-const params = new URLSearchParams(window.location.search);
-const cat = params.get('cat');
-const images = {
+
 <script>
 const params = new URLSearchParams(window.location.search);
 const cat = params.get('cat');
 
 const images = {
-  ...
+
+  summer: [
+    'images/summer/SUMMER MENU 1.png',
+    'images/summer/SUMMER MENU 2.png',
+    'images/summer/SUMMER MENU 3.png',
+    'images/summer/SUMMER MENU 4.png',
+    'images/summer/SUMMER MENU 5.png',
+    'images/summer/SUMMER MENU 6.png'
+  ],
+
+  coffee: [
+    'images/coffe time/COFFE TIME 1.png',
+    'images/coffe time/COFFE TIME 2.png'
+  ],
+
+  cocktails: [
+    'images/cocktails/COCKTAILS 1.png',
+    'images/cocktails/COCKTAILS 2.png',
+    'images/cocktails/COCKTAILS 3.png'
+  ],
+
+  combo: [
+    'images/combo/COMBO.png'
+  ],
+
+  icecream: [
+    'images/icecream/ICE CREAM.png'
+  ],
+
+  beer: [
+    'images/beer wine/PIVO I VINO.png'
+  ]
+
 };
 
 const gallery = document.getElementById('gallery');
@@ -29,3 +61,6 @@ const gallery = document.getElementById('gallery');
   gallery.appendChild(img);
 });
 </script>
+
+</body>
+</html>
