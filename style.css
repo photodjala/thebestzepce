@@ -26,8 +26,6 @@ body{
     width:60% !important;
     height:6.4% !important;
     display:block;
-    background:rgba(255,0,0,0.30) !important;
-    border:2px solid yellow !important;
 }
 
 .coffee{ top:37.4% !important; }
