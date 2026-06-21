@@ -21,62 +21,24 @@ body{
 
 .hotspot{
     position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-    width:62%;
+    left:50% !important;
+    transform:translateX(-50%) !important;
+    width:48% !important;
+    height:3.7% !important;
     display:block;
-
-    background:rgba(255,0,0,0.30);
-    border:2px solid yellow;
+    background:rgba(255,0,0,0.30) !important;
+    border:2px solid yellow !important;
 }
 
-/* COFFEE TIME */
-.coffee{
-    top:20%;
-    height:2%;
-}
-
-/* SUMMER MENU */
-.summer{
-    top:46%;
-    height:4%;
-}
-
-/* SNACK & SWEET */
-.snack{
-    top:51.5%;
-    height:4%;
-}
-
-/* ICE CREAM */
-.icecream{
-    top:57%;
-    height:4%;
-}
-
-/* COCKTAILS */
-.cocktails{
-    top:62.5%;
-    height:4%;
-}
-
-/* COMBO */
-.combo{
-    top:68%;
-    height:4%;
-}
-
-/* BEER & WINE */
-.beer{
-    top:73.5%;
-    height:4%;
-}
-
-/* ALCOHOL */
-.alcohol{
-    top:79%;
-    height:4%;
-}
+/* POZICIJE DUGMADI */
+.coffee{ top:39.8% !important; }
+.summer{ top:45.3% !important; }
+.snack{ top:50.7% !important; }
+.icecream{ top:56.2% !important; }
+.cocktails{ top:61.6% !important; }
+.combo{ top:67.1% !important; }
+.beer{ top:72.6% !important; }
+.alcohol{ top:78.0% !important; }
 
 .back{
     display:block;
