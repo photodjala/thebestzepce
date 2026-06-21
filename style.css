@@ -61,6 +61,7 @@ body{
 .alcohol{
     top:86%;
     height:6%;
+    background:rgba(255,0,0,.35) !important;
 }
 
 .back{
