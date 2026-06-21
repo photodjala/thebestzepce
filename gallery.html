@@ -32,6 +32,10 @@ const images = {
     'images/coffe time/COFFE TIME 2.png'
   ],
 
+  icecream: [
+    'images/icecream/ICE CREAM.png'
+  ],
+
   cocktails: [
     'images/cocktails/COCKTAILS 1.png',
     'images/cocktails/COCKTAILS 2.png',
@@ -42,25 +46,8 @@ const images = {
     'images/combo/COMBO.png'
   ],
 
-  icecream: [
-    'images/icecream/ICE CREAM.png'
-  ],
-
   beer: [
     'images/beer wine/PIVO I VINO.png'
   ]
 
 };
-
-const gallery = document.getElementById('gallery');
-
-(images[cat] || []).forEach(name => {
-  const img = document.createElement('img');
-  img.src = name;
-  img.className = 'menuimg';
-  gallery.appendChild(img);
-});
-</script>
-
-</body>
-</html>
