@@ -23,49 +23,59 @@ body{
     position:absolute;
     left:50%;
     transform:translateX(-50%);
-    width:74%;
+    width:62%;
     display:block;
 
-    background:rgba(255,0,0,0.3);
+    background:rgba(255,0,0,0.30);
     border:2px solid yellow;
 }
 
-
 /* COFFEE TIME */
 .coffee{
-    top:41%;
-    height:5%;
+    top:40.5%;
+    height:4%;
 }
 
 /* SUMMER MENU */
 .summer{
-    top:48%;
-    height:5%;
+    top:46%;
+    height:4%;
 }
 
 /* SNACK & SWEET */
 .snack{
-    top:55%;
-    height:5%;
+    top:51.5%;
+    height:4%;
 }
 
-/* BEZALKOHOLNA PIĆA */
-.drinks{
-    top:73%;
-    height:5%;
+/* ICE CREAM */
+.icecream{
+    top:57%;
+    height:4%;
 }
 
-/* PIVO I VINO */
-.pivo{
-    top:80%;
-    height:5%;
+/* COCKTAILS */
+.cocktails{
+    top:62.5%;
+    height:4%;
 }
 
-/* ALKOHOLNA PIĆA */
+/* COMBO */
+.combo{
+    top:68%;
+    height:4%;
+}
+
+/* BEER & WINE */
+.beer{
+    top:73.5%;
+    height:4%;
+}
+
+/* ALCOHOL */
 .alcohol{
-    top:86%;
-    height:6%;
-    background:rgba(255,0,0,.35) !important;
+    top:79%;
+    height:4%;
 }
 
 .back{
@@ -93,12 +103,4 @@ body{
     display:block;
     margin-bottom:16px;
     border-radius:16px;
-    box-shadow:0 4px 12px rgba(0,0,0,.4);
 }
-
-
-.icecream{ top:60%; height:5%; }
-.cocktails{ top:66%; height:5%; }
-.combo{ top:72%; height:5%; }
-.beer{ top:78%; height:5%; }
-.alcohol{ top:84%; height:5%; }
