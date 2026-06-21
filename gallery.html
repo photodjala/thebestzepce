@@ -12,50 +12,20 @@
 const params = new URLSearchParams(window.location.search);
 const cat = params.get('cat');
 const images = {
+<script>
+const params = new URLSearchParams(window.location.search);
+const cat = params.get('cat');
+
 const images = {
-
-summer:[
-'images/summer/SUMMER MENU.png',
-'images/summer/SUMMER MENU 2.png',
-'images/summer/SUMMER MENU 3.png',
-'images/summer/SUMMER MENU 4.png',
-'images/summer/SUMMER MENU 5.png',
-'images/summer/SUMMER MENU 6.png'
-],
-
-coffee:[
-'images/coffee/COFFE TIME.png',
-'images/coffee/COFFE TIME 2.png'
-],
-
-snack:[
-'images/snack/SNACK SWEET.png'
-],
-
-cocktails:[
-'images/cocktails/COCKTAILS.png'
-],
-
-drinks:[
-'images/drinks/DRINKS.png'
-],
-
-beer:[
-'images/beer/PIVO I VINO.png',
-'images/beer/BOCE.png'
-],
-
-alkohol:[
-'images/alkohol/ALKOHOLNA PICA.png'
-]
-
+  ...
 };
+
 const gallery = document.getElementById('gallery');
-(images[cat] || []).forEach(name=>{
- const img=document.createElement('img');
- img.src=name;
- img.className='menuimg';
- gallery.appendChild(img);
+
+(images[cat] || []).forEach(name => {
+  const img = document.createElement('img');
+  img.src = name;
+  img.className = 'menuimg';
+  gallery.appendChild(img);
 });
 </script>
-</body></html>
