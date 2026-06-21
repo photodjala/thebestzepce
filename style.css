@@ -21,13 +21,11 @@ body{
 
 .hotspot{
     position:absolute;
-    left:13%;
+    left:50%;
+    transform:translateX(-50%);
     width:74%;
-    display:block;
-
-    background:transparent !important;
-    border:none !important;
 }
+
 
 /* COFFEE TIME */
 .coffee{
@@ -90,7 +88,9 @@ body{
     display:block;
     margin-bottom:16px;
     border-radius:16px;
+    box-shadow:0 4px 12px rgba(0,0,0,.4);
 }
+
 
 .icecream{ top:60%; height:5%; }
 .cocktails{ top:66%; height:5%; }
