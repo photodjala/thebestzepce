@@ -12,12 +12,43 @@
 const params = new URLSearchParams(window.location.search);
 const cat = params.get('cat');
 const images = {
-summer:['SUMMER MENU.png','SUMMER MENU 2.png','SUMMER MENU 3.png','SUMMER MENU 4.png','SUMMER MENU 5.png','SUMMER MENU 6.png'],
-coffee:['COFFE TIME.png','COFFE TIME 2.png'],
-snack:['SNACK  SWEET.png','COMBO.png'],
-drinks:['DRINKS.png'],
-pivo:['PIVO I VINO.png','BOCE.png'],
-alkohol:['ALKOHOLNA PICA.png']
+const images = {
+
+summer:[
+'images/summer/SUMMER MENU.png',
+'images/summer/SUMMER MENU 2.png',
+'images/summer/SUMMER MENU 3.png',
+'images/summer/SUMMER MENU 4.png',
+'images/summer/SUMMER MENU 5.png',
+'images/summer/SUMMER MENU 6.png'
+],
+
+coffee:[
+'images/coffee/COFFE TIME.png',
+'images/coffee/COFFE TIME 2.png'
+],
+
+snack:[
+'images/snack/SNACK SWEET.png'
+],
+
+cocktails:[
+'images/cocktails/COCKTAILS.png'
+],
+
+drinks:[
+'images/drinks/DRINKS.png'
+],
+
+beer:[
+'images/beer/PIVO I VINO.png',
+'images/beer/BOCE.png'
+],
+
+alkohol:[
+'images/alkohol/ALKOHOLNA PICA.png'
+]
+
 };
 const gallery = document.getElementById('gallery');
 (images[cat] || []).forEach(name=>{
