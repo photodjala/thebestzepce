@@ -67,3 +67,17 @@ body{
     margin-bottom:16px;
     border-radius:16px;
 }
+#loader{
+    position:fixed;
+    inset:0;
+    background:#f3eadc url("LOADING-SCREEN.png") center center / cover no-repeat;
+    z-index:99999;
+    opacity:1;
+    visibility:visible;
+    transition:opacity .4s ease, visibility .4s ease;
+}
+
+#loader.hide{
+    opacity:0;
+    visibility:hidden;
+}
