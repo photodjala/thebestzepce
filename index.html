@@ -4,19 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Best</title>
-<link rel="stylesheet" href="style.css?v=31">
+<link rel="stylesheet" href="style.css?v=40">
 </head>
 
 <body>
 
 <div id="loader"></div>
 
-<div class="container">
+<div class="container page-content">
 
     <div class="menu-wrapper">
         <img class="hero" src="MAIN-PAGE.jpg" alt="The Best">
 
-        <a href="gallery.html?cat=coffee" class="hotspot coffee"></a>
+        <a href="gallery.html?cat=coffee&v=30" class="hotspot coffee"></a>
         <a href="gallery.html?cat=summer" class="hotspot summer"></a>
         <a href="gallery.html?cat=snack" class="hotspot snack"></a>
         <a href="gallery.html?cat=icecream" class="hotspot icecream"></a>
@@ -30,8 +30,12 @@
 
 <script>
 window.addEventListener('load', () => {
+    const loader = document.getElementById('loader');
+    const content = document.querySelector('.page-content');
+
     setTimeout(() => {
-        document.getElementById('loader').classList.add('hide');
+        loader.classList.add('hide');
+        content.classList.add('show');
     }, 2000);
 });
 </script>
