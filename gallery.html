@@ -63,7 +63,6 @@ coffe: [
 };
 
 const gallery = document.getElementById('gallery');
-const loader = document.getElementById('loader');
 
 if (images[cat]) {
   images[cat].forEach(path => {
@@ -74,10 +73,7 @@ if (images[cat]) {
     gallery.appendChild(img);
   });
 }
-
-setTimeout(() => {
-  loader.classList.add('hide');
-}, 2000);
-
+</script>
+  
 </body>
 </html>
