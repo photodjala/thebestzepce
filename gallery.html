@@ -65,16 +65,21 @@ coffe: [
 };
 
 const gallery = document.getElementById('gallery');
+const loader = document.getElementById('loader');
 
 if (images[cat]) {
   images[cat].forEach(path => {
     const img = document.createElement('img');
     img.src = path;
     img.className = 'menuimg';
+    img.alt = cat;
     gallery.appendChild(img);
   });
 }
-</script>
+
+setTimeout(() => {
+  loader.classList.add('hide');
+}, 2000);
 
 </body>
 </html>
