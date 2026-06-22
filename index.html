@@ -33,12 +33,14 @@ window.addEventListener('load', () => {
     const loader = document.getElementById('loader');
     const content = document.querySelector('.page-content');
 
+    const hasVisited = sessionStorage.getItem('visitedHome');
+    const loadingTime = hasVisited ? 1300 : 2000;
+
+    sessionStorage.setItem('visitedHome', 'true');
+
     setTimeout(() => {
         loader.classList.add('hide');
         content.classList.add('show');
-    }, 2000);
+    }, loadingTime);
 });
 </script>
-
-</body>
-</html>
