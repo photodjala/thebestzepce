@@ -70,7 +70,7 @@ body{
 #loader{
     position:fixed;
     inset:0;
-    background:#f3eadc url("LOADING-SCREEN.png") center center / cover no-repeat;
+    background:#f3eadc url("LOADING-SCREEN.jpg") center center / cover no-repeat;
     z-index:99999;
     opacity:1;
     visibility:visible;
