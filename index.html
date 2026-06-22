@@ -4,10 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Best</title>
-<link rel="stylesheet" href="style.css?v=11">
+<link rel="stylesheet" href="style.css?v=20">
 </head>
 
 <body>
+
+<div id="loader"></div>
+
 <div class="container">
 
     <div class="menu-wrapper">
@@ -24,5 +27,14 @@
     </div>
 
 </div>
+
+<script>
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        document.getElementById('loader').classList.add('hide');
+    }, 2000);
+});
+</script>
+
 </body>
 </html>
