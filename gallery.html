@@ -62,16 +62,26 @@ coffe: [
   ]
 };
 
-const gallery = document.getElementById('gallery');
-
 if (images[cat]) {
   images[cat].forEach(path => {
     const img = document.createElement('img');
-    img.src = path;
+
+    img.src = path + '?v=30';
     img.className = 'menuimg';
     img.alt = cat;
+
+    img.onerror = () => {
+      const errorText = document.createElement('p');
+      errorText.style.textAlign = 'center';
+      errorText.style.color = 'red';
+      errorText.innerText = 'Ne može učitati: ' + path;
+      gallery.appendChild(errorText);
+    };
+
     gallery.appendChild(img);
   });
+} else {
+  gallery.innerHTML = '<p style="text-align:center;">Nema pronađenih slika za ovu kategoriju.</p>';
 }
 </script>
   
